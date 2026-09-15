@@ -145,5 +145,39 @@ An offer must satisfy:
 Price <= Maximum Budget
 Latency <= Maximum Latency
 Availability >= Minimum Availability
+---
+
+## 🤝 Simulated Negotiation Process
+
+The system performs multi-round negotiation between the Customer Agent and Provider Agents.
+
+The negotiation process follows:
+
+```text
+Customer Agent
+      |
+      | SLA Request
+      v
+Negotiation Manager
+      |
+      | Provider Offers
+      v
+Provider Agents
+      |
+      | Initial Offers
+      v
+Customer Agent
+      |
+      | Counter Offer
+      v
+Provider Agent
+      |
+      | Counter Offer
+      v
+Customer Agent
+      |
+      | Acceptance
+      v
+Simulated SLA Agreement
 CPU >= Required CPU
 Memory >= Required Memory
