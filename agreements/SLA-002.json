@@ -1,0 +1,39 @@
+{
+    "agreement_id": "SLA-002",
+    "agreement_type": "SIMULATED_SLA",
+    "status": "ACTIVE",
+    "created_at": "2026-09-15T17:38:28.000206",
+    "version": 1,
+    "simulation_notice": "This is a simulated research agreement. No real Rackspace SLA was created, modified, or accepted.",
+    "customer": {
+        "name": "Customer-1",
+        "application_type": "we",
+        "requirements": {
+            "cpu": 4.0,
+            "memory_gb": 16.0,
+            "max_budget_per_hour": 0.1,
+            "max_latency_ms": 99.0,
+            "min_availability_percent": 98.0,
+            "priority": "balanced"
+        }
+    },
+    "provider": {
+        "agent_id": "Provider Agent 2",
+        "server_class": "gp.vs1.xlarge-ord",
+        "region": "us-central-ord-1",
+        "cpu": 8.0,
+        "memory_gb": 32.0
+    },
+    "agreement_terms": {
+        "agreed_price_per_hour": 0.0047,
+        "market_reference_price_per_hour": 0.005,
+        "latency_ms": 45.0,
+        "availability_percent": 99.8
+    },
+    "negotiation": {
+        "round": 3,
+        "utility": 0.89,
+        "status": "ACCEPTED"
+    },
+    "history": []
+}

@@ -1,0 +1,65 @@
+{
+    "agreement_id": "SLA-006",
+    "agreement_type": "SIMULATED_SLA",
+    "status": "ACTIVE",
+    "created_at": "2026-09-15T22:18:15.554256",
+    "version": 2,
+    "simulation_notice": "This is a simulated research agreement. No real Rackspace SLA was created, modified, or accepted.",
+    "customer": {
+        "name": "w",
+        "application_type": "ww",
+        "requirements": {
+            "cpu": 4,
+            "memory_gb": 16.0,
+            "max_budget_per_hour": 1.0,
+            "max_latency_ms": 99.0,
+            "min_availability_percent": 98.0,
+            "priority": "Balanced"
+        }
+    },
+    "provider": {
+        "agent_id": "Provider Agent 2",
+        "server_class": "gp.vs2.xlarge-dfw2",
+        "region": "us-central-dfw-2",
+        "cpu": 8.0,
+        "memory_gb": 32.0
+    },
+    "agreement_terms": {
+        "agreed_price_per_hour": 0.0752,
+        "market_reference_price_per_hour": 0.08,
+        "latency_ms": 40.0,
+        "availability_percent": 99.0
+    },
+    "negotiation": {
+        "round": 3,
+        "utility": 0.8775,
+        "status": "RENEGOTIATED",
+        "trigger": "SLA_BREACH"
+    },
+    "history": [
+        {
+            "timestamp": "2026-09-15T22:18:15.554256",
+            "event": "SLA_BREACH_DETECTED",
+            "breach_type": "LATENCY",
+            "severity": "MEDIUM",
+            "previous_agreement": "SLA-005"
+        },
+        {
+            "timestamp": "2026-09-15T22:18:15.554256",
+            "event": "RENEGOTIATION_COMPLETED",
+            "previous_version": 1,
+            "new_version": 2,
+            "status": "RENEGOTIATED"
+        }
+    ],
+    "previous_agreement_id": "SLA-005",
+    "renegotiation": {
+        "trigger": "SLA_BREACH",
+        "breach_type": "LATENCY",
+        "severity": "MEDIUM",
+        "timestamp": "2026-09-15T22:18:15.554256",
+        "previous_version": 1,
+        "new_version": 2,
+        "reason": "Automatic simulated SLA renegotiation"
+    }
+}
